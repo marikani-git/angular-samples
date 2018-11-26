@@ -1,0 +1,23 @@
+<div class="container">
+  
+    <h3 style="text-align: center;">
+        Create Student Form
+      </h3>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="student.name">
+      </div>
+      <div class="dept">
+        <label for="dept">Department:</label>
+        <input type="text" class="form-control" name="dept" [(ngModel)]="student.dept">
+      </div>
+      <div class="radio">
+          <label> Gender: </label>
+          <label><input type="radio" name="gender" value="Male" checked [(ngModel)]="student.gender">Male</label> &nbsp;
+          <label><input type="radio" name="gender" value="Female" [(ngModel)]="student.gender">Female</label>
+      </div>
+      <button type="button" class="btn btn-default" (click)="createStudent()">Submit</button>
+    </form>
+</div>

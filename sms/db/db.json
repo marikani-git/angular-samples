@@ -1,0 +1,63 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rajesh",
+      "dept": "CSE",
+      "gender": "Male"
+    },
+    {
+      "id": 2,
+      "name": "Bala",
+      "dept": "ECE",
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "name": "Malar",
+      "dept": "EEE",
+      "gender": "Female"
+    },
+    {
+      "id": 4,
+      "name": "Roja",
+      "dept": "IT",
+      "gender": "Female"
+    },
+    {
+      "name": "Raja",
+      "dept": "Civil",
+      "gender": 1,
+      "id": 5
+    },
+    {
+      "name": "Sathish",
+      "dept": "Mech",
+      "gender": "Female",
+      "id": 6
+    },
+    {
+      "name": "Mathi",
+      "dept": "EEE",
+      "gender": "Female",
+      "id": 7
+    },
+    {
+      "name": "Maaran",
+      "dept": "Mech",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "gender": "Male",
+      "name": "Sathish",
+      "dept": "Mech",
+      "id": 9
+    },
+    {
+      "name": "test-user1",
+      "dept": "Civil",
+      "id": 10
+    }
+  ]
+}

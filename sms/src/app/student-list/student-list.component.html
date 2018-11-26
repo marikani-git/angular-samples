@@ -1,0 +1,44 @@
+<div class="container">
+
+<h3 style="text-align: center;">
+  All Student Records
+</h3>
+<table class="table">
+  <caption>Optional table caption.</caption>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Dept</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students | async; let i = index;">
+      <th scope="row">{{ i + 1}}</th>
+      <td>{{ student.name }}</td>
+      <td>{{ student.dept }}</td>
+      <td>{{ student.gender }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<app-child-comp 
+  [parentCompValue] = "valFromParent"
+  (fromChild) = "printValue($event)">
+
+</app-child-comp>
+
+{{valuFromChild}}
+
+<div *ngIf="valuFromChild else subDiv">
+  div with *ngIf structural directive <h2> {{ valuFromChild }} </h2>
+</div>
+
+<ng-template #subDiv>
+  <div>
+    div with ng-template and it's DOM id is #subDive
+  </div>
+</ng-template>
