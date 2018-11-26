@@ -29,7 +29,6 @@ const smsRouteConfig: Routes = [
       enableTracing: false,
       useHash: true,
       errorHandler: (error) => {
-        console.log('path not found...', error);
       }
     }),
     FormsModule,
